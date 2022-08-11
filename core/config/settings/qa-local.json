@@ -1,0 +1,12 @@
+{
+    "environment": {
+      "name": "production"
+    },
+    "serviceMocker": {
+      "include": []
+    },
+    "services": {
+        "security": "https://api-qa.application.com"
+    }
+  }
+  

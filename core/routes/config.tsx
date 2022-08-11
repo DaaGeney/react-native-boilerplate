@@ -1,0 +1,20 @@
+/* global JSX */
+// packages
+import React from 'react';
+import Dashboard from '../../screens/dashboard';
+
+// scripts
+export type RouteConfig = {
+  path: string;
+  element: JSX.Element;
+  routes?: RouteConfig[];
+};
+
+export type RouteConfigComponentProps = Pick<RouteConfig, 'routes'>;
+
+export const routes: Record<string, RouteConfig> = {
+  dashboard: {
+    path: '/',
+    element: <Dashboard />
+  }
+};

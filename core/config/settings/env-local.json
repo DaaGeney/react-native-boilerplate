@@ -1,0 +1,15 @@
+{
+    "environment": {
+      "name": "local"
+    },
+    "serviceMocker": {
+      "include": []
+    },
+    "services": {
+      "security": "https://api-dev.application.com"
+    },
+    "reduxLogger": {
+      "isEnabled": true
+    }
+  }
+  
