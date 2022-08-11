@@ -1,7 +1,8 @@
 /* global JSX */
 // packages
-import React from 'react';
 import Dashboard from '../../screens/dashboard';
+import React from 'react';
+import Settings from '../../screens/settings';
 
 // scripts
 export type RouteConfig = {
@@ -16,5 +17,9 @@ export const routes: Record<string, RouteConfig> = {
   dashboard: {
     path: '/',
     element: <Dashboard />
+  },
+  settings: {
+    path: '/settings',
+    element: <Settings />
   }
 };

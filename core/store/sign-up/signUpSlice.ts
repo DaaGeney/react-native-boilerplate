@@ -4,6 +4,7 @@ import { IUserState, ServiceType } from '../../../utils/types';
 
 const initialState: IUserState = {
   email: '',
+  authToken: '',
   password: '',
   firstName: '',
   lastName: '',

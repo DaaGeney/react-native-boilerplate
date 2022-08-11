@@ -1,5 +1,5 @@
 {
-  "config": {
-    "security": "{security}/configs"
+  "security": {
+    "login": "{security}/login"
   }
 }

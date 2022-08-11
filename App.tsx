@@ -4,7 +4,7 @@ import { NativeRouter } from 'react-router-native';
 import { Provider as ReduxProvider } from 'react-redux';
 
 // scripts
-import Main from "./core/main";
+import RouterMapper from "./core/routes";
 import { store } from './core';
 
 
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <ReduxProvider store={store}>    
       <NativeRouter >
-        <Main />
+        <RouterMapper />
       </NativeRouter>
     </ReduxProvider>
   );

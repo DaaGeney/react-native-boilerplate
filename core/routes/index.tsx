@@ -4,9 +4,9 @@ import {
 } from 'react-router-native';
 
 // scripts
-import { routes } from '../routes/config';
+import { routes } from './config';
 
-const Main = () => {
+const RouterMapper = () => {
   return (
     <Routes>
       <Route path="*" element={<Navigate to="/" />} />
@@ -29,4 +29,4 @@ const Main = () => {
   );
 }
 
-export default Main;
+export default RouterMapper;

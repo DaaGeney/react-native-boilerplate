@@ -6,7 +6,7 @@
       "include": []
     },
     "services": {
-        "security": "https://api-prod.application.com"
+      "security": "https://api-prod.application.com"
     }
   }
   

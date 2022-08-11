@@ -6,8 +6,9 @@ export enum ServiceType {
 
 export type IUserState = {
   email: string;
-  password: string;
   firstName: string;
   lastName: string;
+  password: string;
   serviceType: ServiceType;
+  authToken: string;
 };

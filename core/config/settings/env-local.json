@@ -3,7 +3,9 @@
       "name": "local"
     },
     "serviceMocker": {
-      "include": []
+      "include": [
+        "mockServiceSecurityLogin"
+      ]
     },
     "services": {
       "security": "https://api-dev.application.com"

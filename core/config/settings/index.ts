@@ -11,7 +11,7 @@ import envQa from './qa-local.json';
 import globals from './globals.json';
 
 const getSettings = () => {
-  switch (process.env.ENV) {
+  switch (process.env.NODE_ENV) {
     case constants.environment.DEV:
       return merge(globals, envLocal);
     case constants.environment.PRODUCTION:
