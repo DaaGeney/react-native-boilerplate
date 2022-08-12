@@ -6,6 +6,7 @@ import axios from 'axios';
 // @scripts
 import { config } from '../config';
 import { createMockResponse, getMockParams } from '../../utils/mock';
+
 // @enums
 enum HttpCodes {
   success = 200,

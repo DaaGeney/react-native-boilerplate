@@ -55,7 +55,9 @@
     "react/jsx-props-no-spreading": "off",
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
-    "react/style-prop-object": "off"
+    "react/style-prop-object": "off",
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 2]
   },
   "ignorePatterns": ["*.config.js", "*.d.ts", ".expo", ".expo-shared"]
 }

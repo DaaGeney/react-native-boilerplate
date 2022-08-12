@@ -7,8 +7,6 @@ import { Text, View, Button } from 'react-native';
 
 // scripts
 import { config } from '../../core/config';
-
-// scripts
 import styles from './styles';
 
 const Dashboard = () => {
