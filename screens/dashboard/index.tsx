@@ -1,9 +1,12 @@
 // packages
+import React from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-native';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, Button } from 'react-native';
-import { Link } from "react-router-native";
+
+// scripts
 import { config } from '../../core/config';
-import axios from 'axios';
 
 // scripts
 import styles from './styles';
@@ -13,7 +16,7 @@ const Dashboard = () => {
     await axios.post(config.services.security.login, {
       params: {
         email: 'user@Celerik.com', password: '123'
-    }
+      }
     })
   }
 

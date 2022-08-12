@@ -29,7 +29,6 @@
 import axios from 'axios';
 import store from '../store';
 
-
 const addRequestInterceptors = () => {
   axios.interceptors.request.use(
     (request) => {

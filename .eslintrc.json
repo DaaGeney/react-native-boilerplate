@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "react-native/react-native": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-native"
+  ],
+  "rules": {
+    "curly": "warn",
+    "no-throw-literal": "warn",
+    "semi": "off",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "class-methods-use-this": 0,
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "no-param-reassign": 0,
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "react/function-component-definition": 0,
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/style-prop-object": "off"
+  },
+  "ignorePatterns": ["*.config.js", "*.d.ts", ".expo", ".expo-shared"]
+}

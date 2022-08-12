@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // @packages
 import MockAdapter from 'axios-mock-adapter';
 import axios from 'axios';
@@ -5,7 +6,6 @@ import axios from 'axios';
 // @scripts
 import { config } from '../config';
 import { createMockResponse, getMockParams } from '../../utils/mock';
-
 // @enums
 enum HttpCodes {
   success = 200,
@@ -29,7 +29,7 @@ const mockedServices = {
           httpCode: success ? HttpCodes.success : HttpCodes.unauthorized
         });
       });
-  },
+  }
 } as CustomObject;
 
 export const initializeServiceMocker = (store: unknown) => {

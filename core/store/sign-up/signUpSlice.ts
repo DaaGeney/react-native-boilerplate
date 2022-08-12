@@ -8,7 +8,7 @@ const initialState: IUserState = {
   password: '',
   firstName: '',
   lastName: '',
-  serviceType: ServiceType.None,
+  serviceType: ServiceType.None
 };
 
 export const cardsSlice = createSlice({
@@ -25,9 +25,7 @@ export const cardsSlice = createSlice({
       state.password = action.payload.password;
       state.serviceType = action.payload.serviceType;
     },
-    removeUserInformation: () => {
-      return initialState;
-    }
+    removeUserInformation: () => initialState
   }
 });
 
